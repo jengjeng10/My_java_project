@@ -6,27 +6,29 @@ public class Multilf02 {
         double ticket = 1000.0;
         double discount ; // 할인율
         String so ;
-
+        double doo ;
 
         if(age <8 ){
-            so = "유아";
+            so = "유아(무료입장)";
             discount =   1.0;
         }else if(age <14){
-            so = "어린이";
+            so = "어린이(50%할인)";
             discount =  0.5;
         }else if(age <20){
-            so = "청소년";
+            so = "청소년(30% 할인)";
             discount =  0.3;
         }else if(age >= 65){
-            so = "노인";
+            so = "노인(40퍼 할인)";
             discount =  0.4;
         }else{
-            so = "성인";
+            so = "성인(정가)";
             discount =  0.0;
 
         }
-        System.out.println(discount);
-        System.out.println(so);
+        String message = age + "살 : " + so;
+        System.out.println(message);
+        message = "가격은"+ ticket * (1 - discount) + "입니다.";
+        System.out.println(message);
 
 
     }
