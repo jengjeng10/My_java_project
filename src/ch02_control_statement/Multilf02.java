@@ -27,7 +27,7 @@ public class Multilf02 {
         }
         String message = age + "살 : " + so;
         System.out.println(message);
-        message = "가격은"+ ticket * (1 - discount) + "입니다.";
+        message = "가격은"+ (int)(ticket * (1 - discount)) + "입니다.";
         System.out.println(message);
 
 
