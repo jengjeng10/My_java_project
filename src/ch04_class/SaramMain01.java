@@ -1,0 +1,62 @@
+package ch04_class;
+
+public class SaramMain01 {
+    public static void main(String[] args) { // void 반환하지 않음 main(매개변수는 String[] args)
+        // 그러므로 이부분 부터는 다 지역변수다. 지역 변수는 초기화 값을 해줘야 된다.
+        // 단계 2 : 객체 생성
+        // 클래스 이름 객체 이름 = new 생성자이름() ;
+        Saram01 yusin = new Saram01();
+        int x ;
+        System.out.println(x);
+        Saram01 soon ;
+        soon = new Saram01();
+
+        // 단계3 : 객체의 멤버 변수에 쓰기 작업
+        //점(.)을 멤버 참조 연산자라고 부릅니다.
+        yusin.nationality = "대한 민국";
+        yusin.name = "김유신";
+        yusin.height = 172.5 ;
+        yusin.weight = 72.2;
+        yusin.hobby = "당구";
+        yusin.blood = "AB";
+
+        soon.nationality = "대한 민국";
+        soon.name = "유관순";
+        soon.height = 168.5 ;
+        soon.weight = 65.2;
+        soon.hobby = "축구";
+        soon.blood = "O";
+        // 단계4 : 객체의 멤버 변수의 값을 출력
+        System.out.println("국적 : "+yusin.nationality );
+        System.out.println("이름 : "+yusin.name );
+        System.out.println("키 : "+yusin.height );
+        System.out.println("몸무게 : "+yusin.weight );
+        System.out.println("취미 : "+yusin.hobby );
+        System.out.println("혈액형 : "+yusin.blood );
+
+        System.out.println();
+
+        System.out.println("국적 : "+soon.nationality );
+        System.out.println("이름 : "+soon.name );
+        System.out.println("키 : "+soon.height );
+        System.out.println("몸무게 : "+soon.weight );
+        System.out.println("취미 : "+soon.hobby );
+        System.out.println("혈액형 : "+soon.blood );
+
+        String message = yusin.showGenderInfo(3);
+        System.out.println(message);
+
+
+        message = soon.showGenderInfo(2);
+        System.out.println(message);
+
+        message = yusin.showBmiInfo();
+        System.out.println(message);
+
+        message = soon.showBmiInfo();
+        System.out.println(message);
+
+        yusin.display();
+        soon.display();
+    }
+}
