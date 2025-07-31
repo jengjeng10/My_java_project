@@ -6,8 +6,6 @@ public class SaramMain01 {
         // 단계 2 : 객체 생성
         // 클래스 이름 객체 이름 = new 생성자이름() ;
         Saram01 yusin = new Saram01();
-        int x ;
-        System.out.println(x);
         Saram01 soon ;
         soon = new Saram01();
 

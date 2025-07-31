@@ -3,9 +3,20 @@ import java.util.Scanner;
 
 public class RPGgame01 {
 
-    String name; // 플레이어의 이름
-    int job; // 직업
-    int STR , DEX , CON ; // 힘 , 민첩 , 체력
+    private String name; // 플레이어의 이름
+    void setName (Scanner scan){
+        name = scan.next();
+    }
+
+    private int job; // 직업
+    void setJob (Scanner scan){
+        job = scan.nextInt();
+
+    }
+
+
+
+    private int STR , DEX , CON ; // 힘 , 민첩 , 체력
 
 
     String job_number() {
