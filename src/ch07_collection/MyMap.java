@@ -78,7 +78,7 @@ public class MyMap {
         System.out.println("요소 크기 : " + teamMap.size());
         System.out.println(teamMap.toString());
 
-        teamMap.
+
 
         teamMap.clear();
         if (teamMap.isEmpty()) {
